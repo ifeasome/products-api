@@ -7,7 +7,7 @@
     },
     "servers": [
       {
-        "url": "/api"
+        "url": "/api/v1"
       }
     ], 
     "paths": {
@@ -158,7 +158,38 @@
                 }
               ],
             "get": {
-          
+              "parameters": [
+                {
+                  "in": "query",
+                  "name": "sort",
+                  "schema": {
+                    "type": "string",
+                    "enum": [
+                      "date",
+                      "votes",
+                      "rating"
+                    ]
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "OK",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "type": "array",
+                        "items": {
+                          "$ref": "#/components/schemas/Review"
+                        }
+                      }
+                    }
+                  }
+                },
+                "404": {
+                  "description": "Not found"
+                }
+              }
             },
             "post": {
                 "requestBody": {
