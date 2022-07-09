@@ -221,6 +221,24 @@
             }
           },
           "/products/{product_id}/reviews/{review_id}": {
+            "parameters": [
+              {
+                "in": "path",
+                "name": "product_id",
+                "required": true,
+                "schema": {
+                  "type": "integer"
+                }
+              },
+              {
+                "in": "path",
+                "name": "review_id",
+                "required": true,
+                "schema": {
+                  "type": "integer"
+                }
+              }
+            ],
             "get": {
                 "parameters": [
                     {
