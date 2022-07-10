@@ -33,6 +33,13 @@
                   "rating"
                 ]
               }
+            },
+            {
+              "in": "query",
+              "name": "page",
+              "schema": {
+                "type": "integer"
+              }
             }
           ],
             "responses": {
@@ -189,9 +196,8 @@
               }
             },
             {
-              "in": "path",
-              "name": "review_id",
-              "required": true,
+              "in": "query",
+              "name": "page",
               "schema": {
                 "type": "integer"
               }
