@@ -34,6 +34,7 @@ To view repo, go to: [Application Repo](https://github.com/ifeasome/products-api
 To use this app, follow the deployed links below:
 
 [Deployed App v1](https://products.tech-works.xyz/docs/v1/)
+</br>
 [Deployed App v2](https://products.tech-works.xyz/docs/v2/)
 
 ## Application_Demo 
